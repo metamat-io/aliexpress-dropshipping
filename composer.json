@@ -1,0 +1,28 @@
+{
+    "name": "metamat-io/aliexpress-dropshipping",
+    "description": "It is used for simplified work with AliExpress Dropshipping",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "aliexpress",
+        "dropshipping",
+        "metamat-io"
+    ],
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MetamatIo\\AliexpressDropshipping\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "diller0054",
+            "email": "info@hitno.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
