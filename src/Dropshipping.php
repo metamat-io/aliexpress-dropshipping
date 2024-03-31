@@ -18,21 +18,25 @@ final class Dropshipping
     public string $app_key;
     public string $secret_key;
     public string $gateway_url;
-    public int $connect_timeout = 0;
-    public int $read_timeout = 0;
+    public int $connect_timeout;
+    public int $read_timeout;
 
     protected string $sign_method = "sha256";
     protected string $sdk_version = "iop-sdk-php-20220608";
 
     public function __construct(
         string $url,
-        string|int $app_key,
+        int $app_key,
         string $secret_key,
+        float $connect_timeout = 0,
+        float $read_timeout = 0
     )
     {
         $this->gateway_url = $url;
         $this->app_key = $app_key;
         $this->secret_key = $secret_key;
+        $this->connect_timeout = $connect_timeout;
+        $this->read_timeout = $read_timeout;
     }
 
     /**
